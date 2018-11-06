@@ -15,9 +15,9 @@ namespace JustSaying.AwsTools
         /// Default visibility timeout for message in seconds
         /// </summary>
         public static int DEFAULT_VISIBILITY_TIMEOUT = 30;
-        
+
         /// <summary>
-        /// Number of times a handler will retry a message until a message 
+        /// Number of times a handler will retry a message until a message
         /// is sent to error queue
         /// </summary>
         public static int DEFAULT_HANDLER_RETRY_COUNT = 5;
@@ -28,11 +28,11 @@ namespace JustSaying.AwsTools
         public static int DEFAULT_PUBLISHER_RETRY_COUNT = 3;
 
         /// <summary>
-        /// Every time a publisher is not able to deliver a message, it will 
+        /// Every time a publisher is not able to deliver a message, it will
         /// wait {interval}*{attemptCount} miliseconds before retrying,
         /// </summary>
         public static int DEFAULT_PUBLISHER_RETRY_INTERVAL = 100;//100 milliseconds
-        
+
         /// <summary>
         /// Minimum message retention period on a queue.
         /// </summary>
@@ -40,14 +40,13 @@ namespace JustSaying.AwsTools
 
         /// <summary>
         /// Default message retention period on a queue in seconds
-        /// </summary>
-        public static int DEFAULT_RETENTION_PERIOD = 60 * 10;    //10 minutes
+        public static int DEFAULT_RETENTION_PERIOD = 345600;    //4 days
 
         /// <summary>
         /// Maximum message retention period on a queue in seconds
         /// </summary>
         public static int MAXIMUM_RETENTION_PERIOD = 1209600;    //14 days
-        
+
         /// <summary>
         /// Minimum delay in message delivery for SQS i nseconds. This is also the default.
         /// </summary>
